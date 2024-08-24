@@ -1,8 +1,6 @@
 import streamlit as st
 import requests
 import urllib.parse
-
-from streamlit_extras.stylable_container import stylable_container
 import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
