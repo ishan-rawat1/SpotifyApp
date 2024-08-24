@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 
 
 
-REDIRECT_URI = 'http://localhost:8501'
+REDIRECT_URI = 'https://betterspotify.streamlit.app/'
 SCOPE = 'user-top-read user-read-private user-read-email user-library-read playlist-read-private playlist-modify-public playlist-modify-private playlist-read-collaborative user-library-modify user-library-read user-read-recently-played'
 
 CLIENT_ID = '003c2fa42f88469facbc5a5f83cbfb7f'
