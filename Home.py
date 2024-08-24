@@ -6,7 +6,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 
-
 REDIRECT_URI = 'https://betterspotify.streamlit.app/'
 SCOPE = 'user-top-read user-read-private user-read-email user-library-read playlist-read-private playlist-modify-public playlist-modify-private playlist-read-collaborative user-library-modify user-library-read user-read-recently-played'
 
@@ -201,7 +200,7 @@ def display_app():
                          'speechiness',
                          'tempo', 'loudness']]
                     st.write(df.T)
-
+                display_add_to_playlist(track_id)
             else:
                 st.error("Track not found.")
 
@@ -335,7 +334,6 @@ def display_add_to_playlist(track_id):
                     st.error("Failed to add track to playlist.")
             else:
                 st.error("Selected playlist not found.")
-
 
 
 if __name__ == "__main__":
