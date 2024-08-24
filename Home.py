@@ -38,7 +38,7 @@ def handle_oauth_flow():
             access_token = exchange_code_for_access_token(code)
             if access_token:
                 st.session_state['access_token'] = access_token
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("Failed to authenticate with Spotify.")
     else:
