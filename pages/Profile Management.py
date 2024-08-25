@@ -28,8 +28,8 @@ def display_user_profile():
         st.subheader("User Profile")
         st.write(f"Username: {user_profile['display_name']}")
         st.write(f"Email: {user_profile['email']}")
-        if 'images' in user_profile and user_profile['images']:
-            st.image(user_profile['image'][0]['url'] if user_profile['images'] else None)
+        if 'images' in user_profile and len(user_profile['images']) > 0:
+            st.image(user_profile['images'][0]['url'] if user_profile['images'] else None)
     else:
         st.error("Failed to fetch user profile")
 
