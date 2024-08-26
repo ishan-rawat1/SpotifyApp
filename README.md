@@ -21,7 +21,7 @@ This is a web application built using **Streamlit** and the **Spotify API**. The
 
 ## Setup Instructions
 
-### Prerequisites
+### Prerequisites (until extension request is approved by Spotify)
 - **Python 3.8 - 3.11**: Ensure that you have a compatible version of Python installed.
 - **Spotify Developer Account**: Create a Spotify Developer account and set up a new application to get your `CLIENT_ID` and `CLIENT_SECRET`.
 
