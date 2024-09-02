@@ -18,7 +18,7 @@ TOKEN_URL = 'https://accounts.spotify.com/api/token'
 
 def main():
     st.title("Spotify Track Features Finder")
-
+    st.warning("To ensure a seamless experience with the application, please refer to the README on GitHub for detailed instructions. The application is currently pending approval for Spotify's extension request, which will allow it to function openly without restrictions.")
     if 'access_token' in st.session_state:
         st.success("Successfully authenticated with Spotify.")
         display_app()
